@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Privacy Policy — GigOS</title>
+  <meta name="description" content="GigOS Privacy Policy — how we collect, use, and protect your data." />
+  <link rel="canonical" href="https://gigosapp.com/privacy" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0A0C10;
+      --raised:    #14171E;
+      --card:      #1B1F28;
+      --cyan:      #18C8E6;
+      --cyan-dim:  rgba(24,200,230,0.10);
+      --cyan-bdr:  rgba(24,200,230,0.28);
+      --text-1:    #F4F7FA;
+      --text-2:    #7B8494;
+      --text-3:    #545C6B;
+      --border:    rgba(255,255,255,0.08);
+      --border-md: rgba(255,255,255,0.12);
+      --gutter:    clamp(20px, 5vw, 80px);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-1);
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Nav */
+    nav {
+      background: rgba(10,12,16,0.9);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+      max-width: 800px; margin: 0 auto; padding: 0 var(--gutter);
+    }
+    .wordmark {
+      font-family: 'Saira', sans-serif;
+      font-weight: 700; font-size: 20px;
+      color: var(--text-1); text-decoration: none;
+    }
+    .wordmark span { color: var(--cyan); }
+    .nav-back {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px; color: var(--cyan);
+      text-decoration: none; letter-spacing: 0.3px;
+    }
+    .nav-back:hover { text-decoration: underline; }
+
+    /* Content */
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 56px var(--gutter) 80px;
+    }
+
+    .page-eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--cyan);
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: 'Saira', sans-serif;
+      font-weight: 700; font-size: clamp(28px, 5vw, 40px);
+      color: var(--text-1); line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .meta {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px; color: var(--text-3);
+      letter-spacing: 0.3px; margin-bottom: 28px;
+    }
+
+    .intro {
+      background: var(--card);
+      border: 1px solid var(--border-md);
+      border-left: 3px solid var(--cyan);
+      border-radius: 10px;
+      padding: 18px 20px;
+      font-size: 15px; color: var(--text-2);
+      line-height: 1.7; margin-bottom: 48px;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 40px 0;
+    }
+
+    h2 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 600; font-size: 17px;
+      color: var(--text-1); margin-bottom: 12px;
+    }
+
+    p { color: var(--text-2); margin-bottom: 14px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      margin: 10px 0 14px;
+      padding: 0;
+    }
+    ul li {
+      color: var(--text-2);
+      padding: 4px 0 4px 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: '·';
+      position: absolute; left: 6px;
+      color: var(--cyan);
+      font-weight: 700;
+    }
+
+    .section { margin-bottom: 8px; }
+
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      background: var(--raised);
+      border-top: 1px solid var(--border);
+      padding: 32px var(--gutter);
+      text-align: center;
+    }
+    .footer-links {
+      display: flex; align-items: center; justify-content: center;
+      gap: 24px; flex-wrap: wrap; margin-bottom: 12px;
+    }
+    .footer-links a {
+      font-size: 13px; color: var(--text-2);
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: var(--cyan); }
+    .footer-copy {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px; color: var(--text-3);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="wordmark" href="/"><span>Gig</span>OS</a>
+      <a class="nav-back" href="/">← Back to GigOS</a>
+    </div>
+  </nav>
+
+  <main class="page">
+    <p class="page-eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: June 2025</p>
+
+    <div class="intro">
+      GigOS is built for working artists. Your data belongs to you — we only use it to make the app work for you. We do not sell it, we do not share it for advertising, and we never will.
+    </div>
+
+    <div class="section">
+      <h2>1. Information We Collect</h2>
+      <p>When you create a GigOS account, we collect your name, email address, and password. As you use the app, we store the information you enter:</p>
+      <ul>
+        <li>Artist profile — name, photo, bio, location, genres, rate range</li>
+        <li>Gig records — venue, fee, date, promoter name and contact</li>
+        <li>Financial data — advance amounts, expenses, invoice details</li>
+        <li>Uploaded files — contracts, riders, setlists attached to gigs</li>
+      </ul>
+      <p>We do not collect device identifiers, advertising IDs, or track your location in the background.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>2. How We Use Your Information</h2>
+      <p>We use your information solely to provide GigOS features:</p>
+      <ul>
+        <li>Displaying your artist profile and gig history</li>
+        <li>Generating invoices and income summaries</li>
+        <li>Sending authentication emails (OTP, password reset)</li>
+        <li>Showing follow-up reminders and advance alerts</li>
+      </ul>
+      <p>We do not use your data for advertising or sell it to any third party, ever.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>3. Data Storage &amp; Security</h2>
+      <p>Your data is stored securely on <strong style="color:var(--text-1)">Supabase</strong>, a cloud database provider. All data is encrypted in transit (TLS) and at rest. Supabase infrastructure runs on AWS and is SOC 2 Type II compliant.</p>
+      <p>You can request deletion of all your data at any time by contacting us.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>4. Third-Party Services</h2>
+      <p>GigOS uses the following third-party services to operate:</p>
+      <ul>
+        <li><strong style="color:var(--text-1)">Supabase</strong> — database, file storage, and authentication</li>
+        <li><strong style="color:var(--text-1)">RevenueCat</strong> — subscription management (if you upgrade to a paid plan)</li>
+        <li><strong style="color:var(--text-1)">Expo / EAS</strong> — app delivery and updates</li>
+      </ul>
+      <p>None of these services receive your gig data or promoter contact information.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>5. Data Sharing</h2>
+      <p>We do not sell, rent, or share your personal data with third parties for marketing purposes. We may share data only if required by law or to protect the rights and safety of GigOS users.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>6. Your Rights</h2>
+      <p>You may at any time:</p>
+      <ul>
+        <li>Access and export your data — contact us</li>
+        <li>Correct inaccurate information — via Settings in the app</li>
+        <li>Delete your account and all associated data — contact us</li>
+      </ul>
+      <p>To exercise any of these rights, email <a href="mailto:growwithvny@gmail.com">growwithvny@gmail.com</a>.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>7. Children's Privacy</h2>
+      <p>GigOS is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us immediately.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>8. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of significant changes via email or an in-app notice. Continued use of GigOS after changes constitutes your acceptance of the updated policy.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section" id="delete-account">
+      <h2>9. Account & Data Deletion</h2>
+      <p>You can request the deletion of your GigOS account and all associated data at any time. This includes your profile, all gig records, financial data, uploaded files, and any other information stored in our system.</p>
+      <p>To request deletion, email us at <a href="mailto:growwithvny@gmail.com">growwithvny@gmail.com</a> with the subject line <strong style="color:var(--text-1)">Delete My Account</strong> and the email address associated with your account. We will process your request and confirm deletion within 7 business days.</p>
+      <p>Note: Deleted data cannot be recovered. If you have an active subscription, please cancel it before requesting account deletion.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>10. Contact</h2>
+      <p>If you have questions about this Privacy Policy or how we handle your data:</p>
+      <p><a href="mailto:growwithvny@gmail.com">growwithvny@gmail.com</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="mailto:growwithvny@gmail.com">Contact</a>
+    </div>
+    <p class="footer-copy">© 2025 GigOS. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
