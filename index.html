@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>GigOS — The Booking App for Working Artists</title>
-  <meta name="description" content="Track every gig from enquiry to payment. Chase advances, send invoices, and get WhatsApp follow-up reminders — built for DJs, singers, bands, and live artists." />
-  <meta name="keywords" content="DJ booking app, gig management app, artist booking tracker, DJ income tracker, advance tracking DJ, DJ invoice app, musician booking app, live artist app" />
+  <title>GigOS — Gig Booking App for DJs, Singers & Live Artists | Track Payments & Income</title>
+  <meta name="description" content="Free gig management app for DJs, singers, bands, and live artists. Track bookings, chase advance payments, send invoices, and monitor your income — all in one place. Available on Android." />
+  <meta name="keywords" content="DJ booking app, gig management app, artist booking tracker, DJ income tracker, advance payment tracker musician, DJ invoice app, musician booking app, gig tracking app, freelance musician app, live artist booking software, singer gig tracker, band booking app" />
   <link rel="canonical" href="https://gigosapp.com/" />
 
   <!-- Open Graph -->
@@ -34,6 +34,46 @@
     "description": "Booking management app for DJs, singers, bands, and live artists. Track gigs, chase advances, send invoices, get follow-up reminders.",
     "url": "https://gigosapp.com",
     "author": { "@type": "Organization", "name": "GigOS" }
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is GigOS?",
+        "acceptedAnswer": { "@type": "Answer", "text": "GigOS is a free gig management app for freelance musicians and performing artists. It lets you track bookings, manage advance payments, generate invoices, and monitor your income — all from your Android phone." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which artists can use GigOS?",
+        "acceptedAnswer": { "@type": "Answer", "text": "GigOS is built for any working artist who books gigs independently — DJs, singers, live bands, MCs, hosts, producers, and percussionists." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I track advance payments for gigs?",
+        "acceptedAnswer": { "@type": "Answer", "text": "When you add a gig, you can log the agreed advance amount and mark it as requested or received. GigOS shows all pending advances in your pipeline and lets you chase them with a pre-drafted WhatsApp message in one tap." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I generate invoices for my gigs?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — GigOS generates a professional PDF invoice directly from any gig, including your artist name, venue details, fee breakdown, GST support, and auto-calculated totals." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is GigOS free to download?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, GigOS is free to download on Android with no subscription required. Core features including gig tracking, advance management, income dashboard, and invoice generation are all available for free." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is GigOS available on iPhone?",
+        "acceptedAnswer": { "@type": "Answer", "text": "GigOS is currently available on Android via Google Play. An iOS version for iPhone is in the pipeline." }
+      }
+    ]
   }
   </script>
 
@@ -443,6 +483,32 @@
       line-height: 1.7;
     }
 
+    /* ── FAQ ── */
+    .faq { padding: 96px 0; }
+    .faq-list { margin-top: 48px; display: flex; flex-direction: column; gap: 0; }
+    .faq-item {
+      border-top: 1px solid var(--divider);
+      padding: 0;
+    }
+    .faq-item:last-child { border-bottom: 1px solid var(--divider); }
+    .faq-q {
+      font-size: 17px; font-weight: 600; color: var(--text-1);
+      padding: 20px 0; cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 16px;
+    }
+    .faq-q::-webkit-details-marker { display: none; }
+    .faq-q::after {
+      content: '+'; font-size: 22px; color: var(--cyan);
+      font-family: 'IBM Plex Mono', monospace; flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .faq-item[open] .faq-q::after { content: '−'; }
+    .faq-a {
+      font-size: 15px; color: var(--text-2); line-height: 1.7;
+      padding-bottom: 20px; max-width: 680px;
+    }
+
     /* ── Download CTA ── */
     .download {
       padding: 96px 0;
@@ -571,13 +637,13 @@
   <!-- ── Hero ── -->
   <section class="hero">
     <div class="wrap">
-      <p class="hero-eyebrow mono">For DJs · Singers · Bands · MCs · Producers</p>
+      <p class="hero-eyebrow mono">Gig Booking App for DJs · Singers · Bands · MCs · Producers</p>
       <h1 class="hero-h1 saira">
-        Your Gig Business,<br /><span>Sorted.</span>
+        Your Gig Booking<br />Business, <span>Sorted.</span>
       </h1>
       <p class="hero-sub">
-        Track every booking from first enquiry to final payment.
-        Chase advances on WhatsApp, send professional invoices,
+        The gig management app that tracks every booking from first enquiry to final payment.
+        Chase advance payments on WhatsApp, send professional invoices,
         and never lose a venue relationship again.
       </p>
       <div class="hero-ctas">
@@ -682,17 +748,17 @@
   <section class="features" id="features">
     <div class="wrap">
       <p class="section-label mono">What GigOS does</p>
-      <h2 class="section-h2 saira">Everything your booking<br />workflow needs</h2>
+      <h2 class="section-h2 saira">The gig management app<br />built for working artists</h2>
       <p class="section-sub">
-        Purpose-built for live artists — not a generic CRM hacked together.
-        Every feature comes from real pain points on the circuit.
+        Purpose-built for freelance musicians — not a generic CRM hacked together.
+        Every feature comes from real pain points DJs, singers, and live artists face on the circuit.
       </p>
 
       <div class="features-grid">
 
         <div class="feat-card accent">
           <div class="feat-icon">📋</div>
-          <div class="feat-title saira">Booking Pipeline</div>
+          <div class="feat-title saira">Gig Booking Pipeline</div>
           <p class="feat-desc">
             Move gigs through stages — Enquiry → Confirmed → Advance In → Done → Paid. Always know where each booking stands at a glance.
           </p>
@@ -700,7 +766,7 @@
 
         <div class="feat-card">
           <div class="feat-icon">💸</div>
-          <div class="feat-title saira">Advance Tracking</div>
+          <div class="feat-title saira">Advance Payment Tracker</div>
           <p class="feat-desc">
             Log advance amounts, track what's requested vs received, and chase pending payments on WhatsApp in one tap with a pre-drafted message.
           </p>
@@ -716,7 +782,7 @@
 
         <div class="feat-card">
           <div class="feat-icon">🧾</div>
-          <div class="feat-title saira">Professional Invoices</div>
+          <div class="feat-title saira">Musician Invoice Generator</div>
           <p class="feat-desc">
             Generate a shareable PDF invoice directly from any gig. Includes GST support, your business address, and auto-calculated totals.
           </p>
@@ -724,9 +790,9 @@
 
         <div class="feat-card">
           <div class="feat-icon">📊</div>
-          <div class="feat-title saira">Income Dashboard</div>
+          <div class="feat-title saira">Artist Income Dashboard</div>
           <p class="feat-desc">
-            See total earnings, expenses, and profit for any period. Understand which gig types and venues make you the most money.
+            See total earnings, expenses, and net income for any period. Understand which gig types and venues make you the most money as a freelance musician.
           </p>
         </div>
 
@@ -768,6 +834,48 @@
           <div class="step-title saira">Stay top of mind</div>
           <p class="step-desc">GigOS nudges you when it's time to follow up with venues. Never miss a rebook.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ── -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <p class="section-label mono">Common questions</p>
+      <h2 class="section-h2 saira">Everything you need to know</h2>
+
+      <div class="faq-list">
+
+        <details class="faq-item" open>
+          <summary class="faq-q saira">What is GigOS?</summary>
+          <p class="faq-a">GigOS is a free gig management app for freelance musicians and performing artists. It lets you track bookings, manage advance payments, generate invoices, and monitor your income — all from your Android phone. No spreadsheets, no missed payments.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q saira">Which artists can use GigOS?</summary>
+          <p class="faq-a">GigOS is built for any working artist who books gigs independently — DJs, singers, live bands, MCs, hosts, producers, and percussionists. If you get paid to perform and need to manage your bookings, GigOS is for you.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q saira">How do I track advance payments for gigs?</summary>
+          <p class="faq-a">When you add a gig, you can log the agreed advance amount and mark it as requested or received. GigOS shows all pending advances in your pipeline and lets you chase them with a pre-drafted WhatsApp message in one tap.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q saira">Can I generate invoices for my gigs?</summary>
+          <p class="faq-a">Yes — GigOS generates a professional PDF invoice directly from any gig. It includes your artist name, venue details, fee breakdown, GST support, and auto-calculated totals. You can share it instantly from the app.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q saira">Is GigOS free to download?</summary>
+          <p class="faq-a">Yes, GigOS is free to download on Android with no subscription required. Core features including gig tracking, advance management, income dashboard, and invoice generation are all available for free.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q saira">Is GigOS available on iPhone?</summary>
+          <p class="faq-a">GigOS is currently available on Android via Google Play. An iOS version for iPhone is in the pipeline — sign up to be notified when it launches.</p>
+        </details>
+
       </div>
     </div>
   </section>
